@@ -18,9 +18,7 @@ In the future, I plan to make the terminology available for **Anki** once everyt
 
 Follow these steps—it's a one-time setup!
 
-### First Steps:
-
-#### Creating a Vault in Obsidian
+## Creating a Vault in Obsidian
 
 1. Open Obsidian and select **Create new vault**.
 
@@ -30,7 +28,7 @@ Follow these steps—it's a one-time setup!
 
 For a more detailed tutorial, you can check [this guide](https://help.obsidian.md/Getting+started/Creating+your+vault).
 
-#### Installing and Enabling Community Plugins
+## Installing and Enabling Community Plugins
 
 1. Open **Settings** in Obsidian.
 
@@ -42,9 +40,9 @@ For a more detailed tutorial, you can check [this guide](https://help.obsidian.m
 
 That’s the major setup done! Now onto:
 
-### Adding the Terms:
+# Adding the Terminology:
 
-#### Downloading and Extracting the Repository (PC & Mobile)
+## Downloading and Extracting the Repository (PC & Mobile)
 
 **On PC:**
 
@@ -62,7 +60,7 @@ That’s the major setup done! Now onto:
 
 3. Use a file manager app to extract the ZIP file to your device storage.
 
-#### Adding the Files to Obsidian (PC & Mobile)
+## Adding the Files to Obsidian (PC & Mobile)
 
 **On PC:**
 
@@ -80,9 +78,9 @@ That’s the major setup done! Now onto:
 
 3. If you don’t see them, go to **Settings > Vaults > Refresh** to update the file list.
 
-### How To Use Them:
+## How To Use Them:
 
-#### Opening the Terms in Aosr
+### Opening the Terms in Aosr
 
 1. Open **Obsidian** and navigate to your vault.
 
@@ -90,7 +88,7 @@ That’s the major setup done! Now onto:
 
 3. On **mobile**, open the **hamburger menu** (☰) in Obsidian and tap on **Aosr** to access the flashcards. On **PC**, look at the left sidebar and click on the **cards icon** to open Aosr.
 
-#### Editing the Files
+## Editing the Files
 
 - The terminology files **can be edited**, allowing you to add your own notes or corrections.
 
