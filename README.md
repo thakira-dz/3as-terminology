@@ -94,6 +94,6 @@ That’s the major setup done! Now onto:
 
 - The terminology files **can be edited**, allowing you to add your own notes or corrections.
 
-> [!warning] Be Careful!
+> [!WARNING]
 > Do **not** delete tags, emojis, or any special formatting, as they help categorize and structure the spaced repetition system.
 
