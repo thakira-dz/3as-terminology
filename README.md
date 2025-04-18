@@ -20,7 +20,7 @@ Follow these steps—it's a one-time setup!
 
 ## Creating a Vault in Obsidian
 
-1. Open Obsidian and select **Create new vault**
+1. Open Obsidian and select **Create new vault**.
 
 2. Choose a name for your vault and select a location to store it on your device.
 
