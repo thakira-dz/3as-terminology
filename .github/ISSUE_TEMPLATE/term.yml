@@ -1,53 +1,53 @@
 name: "Add New Term"
-description: أضف مصطلح جديد إما جغرافيا أو تاريخ
+description: Suggest a new historical or geographical term to add
 labels: [missed, enhancement]
 body:
   - type: input
     id: term
     attributes:
-      label: المصطلح
-      placeholder: مثال: الدولة البيزنطية
-      description: ما هو المصطلح الذي تريد إضافته؟
+      label: "المصطلح"
+      placeholder: "مثال: الدولة البيزنطية"
+      description: "ما هو المصطلح الذي تريد إضافته؟"
     validations:
       required: true
 
   - type: dropdown
     id: subject
     attributes:
-      label: التصنيف
-      description: اختر المجال الذي ينتمي له هذا المصطلح
+      label: "التصنيف"
+      description: "اختر المجال الذي ينتمي له هذا المصطلح"
       options:
-        - التاريخ
-        - الجغرافيا
+        - "التاريخ"
+        - "الجغرافيا"
     validations:
       required: true
 
   - type: input
     id: unit
     attributes:
-      label: الوحدة التعليمية
-      placeholder: مثال: الوحدة 3 أو "الدولة العثمانية"
-      description: في أي وحدة دراسية يجب أن يُدرج هذا المصطلح؟
+      label: "الوحدة التعليمية"
+      placeholder: "مثال: الوحدة 3 أو الدولة العثمانية"
+      description: "في أي وحدة دراسية يجب أن يُدرج هذا المصطلح؟"
     validations:
       required: true
 
   - type: textarea
     id: definition
     attributes:
-      label: التعريف
-      description: اكتب تعريفًا واضحًا ومختصرًا للمصطلح.
-      placeholder: يمكنك إضافة تواريخ أو أحداث أو شخصيات إذا لزم الأمر.
+      label: "التعريف"
+      description: "اكتب تعريفًا واضحًا ومختصرًا للمصطلح."
+      placeholder: "يمكنك إضافة تواريخ أو أحداث أو شخصيات إذا لزم الأمر."
     validations:
       required: true
 
   - type: textarea
     id: context
     attributes:
-      label: السياق التاريخي أو الجغرافي
-      placeholder: ما أهمية هذا المصطلح؟ متى وأين يُستخدم؟
+      label: "السياق التاريخي أو الجغرافي"
+      placeholder: "ما أهمية هذا المصطلح؟ متى وأين يُستخدم؟"
 
   - type: input
     id: source
     attributes:
-      label: مرجع أو مصدر (اختياري)
-      placeholder: مثال: كتاب مدرسي، موسوعة، مقالة علمية
+      label: "مرجع أو مصدر (اختياري)"
+      placeholder: "مثال: كتاب مدرسي، موسوعة، مقالة علمية"
