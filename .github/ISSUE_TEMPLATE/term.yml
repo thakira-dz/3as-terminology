@@ -1,6 +1,6 @@
 name: "➕ Add New Term"
 description: Suggest a new historical term to add
-labels: [term, enhancement]
+labels: [missed, enhancement]
 body:
   - type: input
     id: term
