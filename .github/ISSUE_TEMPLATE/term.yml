@@ -1,0 +1,30 @@
+name: "➕ Add New Term"
+description: Suggest a new historical term to add
+labels: [term, enhancement]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Term
+      placeholder: e.g., Byzantine Empire
+      description: What is the term you want to add?
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: Definition
+      description: Write a clear, concise definition.
+      placeholder: Include dates, events, or people if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Historical/Cultural Context
+      placeholder: Why is this term important? Where/when is it used?
+  - type: input
+    id: source
+    attributes:
+      label: Reference or Source (optional)
+      placeholder: e.g., history textbook, academic site
