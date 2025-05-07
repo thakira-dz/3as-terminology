@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Flashcard App Support / Feature
+    url: https://github.com/Mouadhbendjedidi/hisgeo-Terminology/discussions/categories/suggest-fc-app
+    about: دعم تطبيقات التكرار المتباعد أو طلب ميزة
+  - name: Idea
+    url: https://github.com/Mouadhbendjedidi/hisgeo-Terminology/discussions/categories/ideas
+    about: ترك فكرة
