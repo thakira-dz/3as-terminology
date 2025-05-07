@@ -22,12 +22,15 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: dropdown
     id: unit
     attributes:
-      label: "الوحدة التعليمية"
-      placeholder: "مثال: الوحدة 3 أو الدولة العثمانية"
-      description: "في أي وحدة دراسية يجب أن يُدرج هذا المصطلح؟"
+      label: "الوحدة التعلمية"
+      description: "اختر الوحدة الذي ينتمي له هذا المصطلح"
+      options:
+        - "الوحدة الأولى"
+        - "الوحدة الثانية"
+        - "الوحدة الثالثة"
     validations:
       required: true
 
