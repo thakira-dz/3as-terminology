@@ -7,11 +7,15 @@ body:
     attributes:
       label: "المصطلح المتأثر"
       placeholder: "مثال: الدولة العثمانية"
+    validations:
+      required: true
   - type: textarea
     id: issue
     attributes:
       label: "ما هو الخطأ؟"
       description: "اشرح الخطأ اللغوي أو المطبعي الذي لاحظته."
+    validations:
+      required: true
   - type: textarea
     id: suggestion
     attributes:
