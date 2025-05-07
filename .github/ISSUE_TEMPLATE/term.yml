@@ -1,0 +1,56 @@
+name: "Add New Term"
+description: Suggest a new historical or geographical term to add
+labels: [missed, enhancement]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: "المصطلح"
+      placeholder: "مثال: الدولة البيزنطية"
+      description: "ما هو المصطلح الذي تريد إضافته؟"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: subject
+    attributes:
+      label: "التصنيف"
+      description: "اختر المجال الذي ينتمي له هذا المصطلح"
+      options:
+        - "التاريخ"
+        - "الجغرافيا"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: unit
+    attributes:
+      label: "الوحدة التعلمية"
+      description: "اختر الوحدة الذي ينتمي له هذا المصطلح"
+      options:
+        - "الوحدة الأولى"
+        - "الوحدة الثانية"
+        - "الوحدة الثالثة"
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition
+    attributes:
+      label: "التعريف"
+      description: "اكتب تعريفًا واضحًا ومختصرًا للمصطلح."
+      placeholder: "يمكنك إضافة تواريخ أو أحداث أو شخصيات إذا لزم الأمر."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "السياق التاريخي أو الجغرافي"
+      placeholder: "ما أهمية هذا المصطلح؟ متى وأين يُستخدم؟"
+
+  - type: input
+    id: source
+    attributes:
+      label: "مرجع أو مصدر (اختياري)"
+      placeholder: "مثال: كتاب مدرسي، موسوعة، مقالة علمية"

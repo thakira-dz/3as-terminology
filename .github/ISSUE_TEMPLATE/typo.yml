@@ -1,0 +1,23 @@
+name: "📝 Fix Typo or Grammar"
+description: "ساعدنا في تصحيح الأخطاء البسيطة"
+labels: [typo]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: "المصطلح المتأثر"
+      placeholder: "مثال: الدولة العثمانية"
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: "ما هو الخطأ؟"
+      description: "اشرح الخطأ اللغوي أو المطبعي الذي لاحظته."
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "التصحيح المقترح"
+      placeholder: "اكتب الصياغة الصحيحة إذا كنت تعرفها."
