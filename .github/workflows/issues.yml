@@ -1,20 +1,21 @@
 name: Issue Labeler
 
 on:
-  workflow_dispatch:
   issues:
     types: [opened, edited]
 
-jobs:
-  triage:
-    runs-on: ubuntu-latest
+permissions:
+  issues: write
 
+jobs:
+  label:
+    runs-on: ubuntu-latest
     steps:
-      - name: Add issue labels
-        uses: github/issue-labeler@v3.4
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run Issue Labeler
+        uses: actions/labeler@v2
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           configuration-path: .github/issue-labeler.yml
-          enable-versioned-regex: 0
-          include-title: 1
-          sync-labels: 1
