@@ -12,7 +12,7 @@ unit-3:
 
 meta-fix:
   - changed-files:
-      - any-glob-to-any-file: "*.md"
+      - any-glob-to-any-file: "*"
 
 history:
   - changed-files:
@@ -21,3 +21,7 @@ history:
 geography:
   - changed-files:
       - any-glob-to-any-file: "**/geography.md"
+
+enhancement:
+  - changed-files:
+      - any-glob-to-any-file: ".github/**"
