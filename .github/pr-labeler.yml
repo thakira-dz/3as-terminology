@@ -1,23 +1,17 @@
 unit-1:
-  - paths:
-      - "unit-1/**"
+  - "unit-1/**"
 
 unit-2:
-  - paths:
-      - "unit-2/**"
+  - "unit-2/**"
 
 unit-3:
-  - paths:
-      - "unit-3/**"
+  - "unit-3/**"
 
 meta-fix:
-  - paths:
-      - "*.md"
+  - "*.md"
 
 history:
-  - paths:
-      - "**/history-*.md"
+  - "**/history-*.md"
 
 geography:
-  - paths:
-      - "**/geography.md"
+  - "**/geography.md"
