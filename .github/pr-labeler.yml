@@ -1,23 +1,23 @@
 unit-1:
-- changed-files:
-  - any-glob-to-any-file: unit-1/**
+  - changed-files:
+      - any-glob-to-any-file: "unit-1/**"
 
 unit-2:
-- changed-files:
-  - any-glob-to-any-file: unit-2/**
+  - changed-files:
+      - any-glob-to-any-file: "unit-2/**"
 
 unit-3:
-- changed-files:
-  - any-glob-to-any-file: unit-3/**
+  - changed-files:
+      - any-glob-to-any-file: "unit-3/**"
 
 meta-fix:
-- changed-files:
-  - any-glob-to-any-file: '*'
+  - changed-files:
+      - any-glob-to-any-file: "*.md"
 
 history:
-- changed-files:
-  - any-glob-to-any-file: **/history-*.md
+  - changed-files:
+      - any-glob-to-any-file: "**/history-*.md"
 
-history:
-- changed-files:
-  - any-glob-to-any-file: **/geography.md
+geography:
+  - changed-files:
+      - any-glob-to-any-file: "**/geography.md"
