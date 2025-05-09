@@ -1,17 +1,23 @@
 unit-1:
-  - "unit-1/**"
+- changed-files:
+  - any-glob-to-any-file: unit-1/**
 
 unit-2:
-  - "unit-2/**"
+- changed-files:
+  - any-glob-to-any-file: unit-2/**
 
 unit-3:
-  - "unit-3/**"
+- changed-files:
+  - any-glob-to-any-file: unit-3/**
 
 meta-fix:
-  - "*.md"
+- changed-files:
+  - any-glob-to-any-file: '*'
 
 history:
-  - "**/history-*.md"
+- changed-files:
+  - any-glob-to-any-file: **/history-*.md
 
-geography:
-  - "**/geography.md"
+history:
+- changed-files:
+  - any-glob-to-any-file: **/geography.md
