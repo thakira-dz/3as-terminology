@@ -104,7 +104,6 @@ Feel free to **edit or add to the terminology notes**—just **don’t delete ta
 ## Future Plans
 
 - [ ] Export terms to Anki decks
-- [ ] Add audio pronunciation for key terms
 - [ ] Enable community suggestions for new terms
 
 ---
