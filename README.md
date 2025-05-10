@@ -1,9 +1,9 @@
 # History and Geography Terminology for Third-Year Secondary Students! 🇩🇿
 
 <p align="center">
-	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/stargazers"><img src="https://img.shields.io/github/stars/Mouadhbendjedidi/Hisgeo-terminology?colorA=f9e2af&colorB=a6da95&style=for-the-badge"></a>
-	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/issues"><img src="https://img.shields.io/github/issues/Mouadhbendjedidi/Hisgeo-terminology?colorA=89b4fa&colorB=a6da95&style=for-the-badge"></a>
-	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/contributors"><img src="https://img.shields.io/github/contributors/Mouadhbendjedidi/Hisgeo-terminology?colorA=a6e3a1&colorB=a6da95&style=for-the-badge&logo=starship&logocolor=a6e3a1"></a>
+	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/stargazers"><img src="https://img.shields.io/github/stars/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=f9e2af&style=for-the-badge"></a>
+	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/issues"><img src="https://img.shields.io/github/issues/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=89b4fa&style=for-the-badge"></a>
+	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/contributors"><img src="https://img.shields.io/github/contributors/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=a6e3a1&style=for-the-badge&logo=starship&logocolor=a6e3a1"></a>
 </p>
 
 Welcome to a fun, effective, and organized way to study History and Geography terminology using the **spaced repetition** method!
