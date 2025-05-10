@@ -112,5 +112,5 @@ Made with passion for learning and sharing knowledge.
 
 <p align="center"> 
          <a href="https://www.instagram.com/Mouadhbendjedidi"><img src="https://img.shields.io/instagram/Mouadhbendjedidi?colorA=363a4f&colorB=cba6f7&style=for-the-badge&logo=instagram&logoColor=cba6f7"></a> 
-         <a href="https://x.com/mouadhbendjedid"><img src="https://img.shields.io/twitter/Mouadhbendjedid?colorA=363a4f&colorB=a6e3a1&style=for-the-badge&logo=twitter&logoColor=a6e3a1"></a> 
+         <a href="https://x.com/mouadhbendjedid"><img src="hhttps://img.shields.io/twitter/follow/mouadhbendjedid?colorA=363a4f&colorB=a6e3a1&style=for-the-badge&logo=twitter&logoColor=a6e3a1"></a> 
  </p>
