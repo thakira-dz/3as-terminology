@@ -1,0 +1,11 @@
+name: "meta fix"
+description: "هناك مشكلة ما في المصدر؟"
+labels: [enhancement, meta-fix]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: "قم بوصف الخطأ..."
+      placeholder: "write in english or arabic whatever"
+    validations:
+      required: true
