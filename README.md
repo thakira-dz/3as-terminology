@@ -1,98 +1,118 @@
 # History and Geography Terminology for Third-Year Secondary Students! 🇩🇿
 
-This resource contains all the information you need to memorize terminology in a fun way using the **spaced repetition** method!
+<p align="center">
+	<a><img src="https://img.shields.io/github/repo-size/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=f9e2af&style=for-the-badge&logo=databricks&logoColor=f9e2af"></a>
+	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/issues"><img src="https://img.shields.io/github/issues/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=cba6f7&style=for-the-badge&logo=hoppscotch&logoColor=cba6f7"></a>
+	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/contributors"><img src="https://img.shields.io/github/contributors/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=a6e3a1&style=for-the-badge&logo=starship&logoColor=a6e3a1"></a>
+</p>
 
-## Where Did the Idea Come From?
+Welcome to a fun, effective, and organized way to study History and Geography terminology using the **spaced repetition** method!
 
-The idea came to me at the beginning of my last high school year. I applied it using an app called [Anki](https://apps.ankiweb.net/), which specializes in creating "Flash Cards" based on **spaced repetition**. From there, I decided to share the terminology in a digital format (there might be some mistakes, so feel free to correct them by opening a [Pull Request](https://github.com/Mouadhbendjedidi/hisgeo-Terminology/pulls)).
+This project is perfect for Algerian third-year secondary students looking to **boost their memory** and **study smarter, not harder**.
 
-We count on you, our programmers! 😆
+---
 
-## How Can I Access This on My Phone or PC?
+## ✨ Why This Exists
 
-For now, I have formatted the terminology to work with a popular app among productivity enthusiasts and note-takers called [Obsidian](https://obsidian.md/). It works on all devices, whether it's a phone or a PC (don't worry, iPhone and Mac users, I haven’t forgotten about you 😆).
+The idea came to me during my final year of high school. I discovered [Anki](https://apps.ankiweb.net/), an awesome flashcard app based on **spaced repetition**, and thought:  
+**Why not apply this to our History and Geo terminology?**
 
-In the future, I plan to make the terminology available for **Anki** once everything is properly organized.
+After successfully using it myself, I decided to make the list available in digital format—first through [Obsidian](https://obsidian.md/), and later on, in Anki format (coming soon!).
 
-## The Process!
+> Found a mistake or want to contribute? Feel free to [open a Pull Request](https://github.com/Mouadhbendjedidi/hisgeo-Terminology/pulls).  
+> We count on you, programmers! 😆
 
-Follow these steps—it's a one-time setup!
+---
 
-## Creating a Vault in Obsidian
+## 📱 How to Use It (Phone or PC)
 
-1. Open Obsidian and select **Create new vault**.
+Right now, the terminology files are designed to work with **Obsidian**, a popular knowledge management app. It works great across **Windows, macOS, Linux, Android, and iOS**.
 
-2. Choose a name for your vault and select a location to store it on your device.
+Later, I plan to release an Anki version too!
 
-3. Click **Create** to finalize the process.
+---
 
-For a more detailed tutorial, you can check [this guide](https://help.obsidian.md/Getting+started/Creating+your+vault).
+## ⚙️ Setup Guide (One-Time Only)
 
-## Installing and Enabling Community Plugins
+### 1. Create a Vault in Obsidian
 
-1. Open **Settings** in Obsidian.
+- Open Obsidian → **Create new vault**
+- Choose a name and location → Click **Create**
 
-2. Navigate to **Community Plugins** and enable them by toggling the switch.
+Need help? Check [this guide](https://help.obsidian.md/Getting+started/Creating+your+vault).
 
-3. Click on **Browse** and search for **"Aosr"**.
+---
 
-4. Click **Install**, then activate it.
+### 2. Install the "Aosr" Plugin (Flashcards)
 
-That’s the major setup done! Now onto:
+- Go to **Settings > Community Plugins**
+- Toggle **"Safe mode" off** and click **Browse**
+- Search for **Aosr**
+- Click **Install** → Then click **Enable**
 
-# Adding the Terminology:
+---
 
-## Downloading and Extracting the Repository (PC & Mobile)
+## 📂 Add the Terminology Files
 
-**On PC:**
+### Download the Repository
 
-1. Go to the [GitHub repository](https://github.com/Mouadhbendjedidi/hisgeo-Terminology).
+**PC:**
 
-2. Click on the green **Code** button and select **Download ZIP**.
+1. Go to the [repository](https://github.com/Mouadhbendjedidi/hisgeo-Terminology)
+2. Click the green **Code** button → **Download ZIP**
+3. Extract it to your vault folder
 
-3. Extract the ZIP file to a location on your computer.
+**Mobile:**
 
-**On Mobile:**
+1. Open the same link in a browser
+2. Tap **Code > Download ZIP**
+3. Use a file manager to extract the ZIP to your Obsidian vault
 
-1. Open the [GitHub repository](https://github.com/Mouadhbendjedidi/hisgeo-Terminology) in your browser.
+---
 
-2. Tap the **Code** button and select **Download ZIP**.
+### Add Files to Obsidian
 
-3. Use a file manager app to extract the ZIP file to your device storage.
+**PC:**
 
-## Adding the Files to Obsidian (PC & Mobile)
+- Copy extracted files to your vault folder
+- Launch Obsidian → You'll see the new notes!
 
-**On PC:**
+**Mobile:**
 
-1. Open the **Obsidian Folder** and navigate to your vault’s folder location.
+- Move files to your vault folder via a file manager
+- Open Obsidian → If notes don’t show, go to **Settings > Vaults > Refresh**
 
-2. Copy the extracted files and paste them into your vault.
+---
 
-3. Open **Obsidian**, and you should see the new terminology notes inside your vault!
+## 🧠 Study With Aosr Flashcards
 
-**On Mobile:**
+- Open **Obsidian**
+- Go to the **Aosr plugin** from the sidebar or the hamburger menu (☰)
+- Start reviewing with spaced repetition!
 
-1. Open your **file manager** and move the extracted files to your Obsidian vault folder.
+---
 
-2. Open **Obsidian**, and your notes should appear automatically.
+## ✏️ Customize and Add Notes
 
-3. If you don’t see them, go to **Settings > Vaults > Refresh** to update the file list.
+Feel free to **edit or add to the terminology notes**—just **don’t delete tags, emojis, or special formatting**. These are essential for the spaced repetition system to work properly!
 
-## How To Use Them:
+> [!WARNING]  
+> Don’t remove the formatting, or you might break the flashcard logic.
 
-### Opening the Terms in Aosr
+---
 
-1. Open **Obsidian** and navigate to your vault.
+## Future Plans
 
-2. Use the **Aosr** plugin by searching for it inside **Community Plugins** (if not installed, follow the previous installation steps).
+- [ ] Export terms to Anki decks
+- [ ] Create an org to make it easier for people to access this terminologies
+- [ ] Discord Server
+- [ ] build a website for this thing lol
 
-3. On **mobile**, open the **hamburger menu** (☰) in Obsidian and tap on **Aosr** to access the flashcards. On **PC**, look at the left sidebar and click on the **cards icon** to open Aosr.
+---
 
-## Editing the Files
+Made with passion for learning and sharing knowledge.
 
-- The terminology files **can be edited**, allowing you to add your own notes or corrections.
-
-> [!WARNING]
-> Do **not** delete tags, emojis, or any special formatting, as they help categorize and structure the spaced repetition system.
-
-testing
+<p align="center"> 
+         <a href="https://www.instagram.com/Mouadhbendjedidi"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=ffffff"></a> 
+         <a href="https://x.com/mouadhbendjedid"><img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=ffffff"></a> 
+ </p>
