@@ -1,7 +1,7 @@
 # History and Geography Terminology for Third-Year Secondary Students! 🇩🇿
 
 <p align="center">
-	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/stargazers"><img src="https://img.shields.io/github/stars/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=f9e2af&style=for-the-badge"></a>
+	<a><img src="https://img.shields.io/github/repo-size/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=f9e2af&style=for-the-badge&logo=databricks&logoColor=f9e2af"></a>
 	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/issues"><img src="https://img.shields.io/github/issues/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=cba6f7&style=for-the-badge"></a>
 	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/contributors"><img src="https://img.shields.io/github/contributors/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=a6e3a1&style=for-the-badge&logo=starship&logoColor=a6e3a1"></a>
 </p>
