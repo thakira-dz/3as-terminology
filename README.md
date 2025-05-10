@@ -104,7 +104,9 @@ Feel free to **edit or add to the terminology notes**—just **don’t delete ta
 ## Future Plans
 
 - [ ] Export terms to Anki decks
-- [ ] Open an Org for this project to make a better workflow! 
+- [ ] Create an org to make it easier for people to access this terminologies
+- [ ] Discord Server
+- [ ] build a website for this thing lol
 
 ---
 
