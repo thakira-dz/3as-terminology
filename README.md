@@ -1,5 +1,11 @@
 # History and Geography Terminology for Third-Year Secondary Students! 🇩🇿
 
+<p align="center">
+	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/stargazers"><img src="https://img.shields.io/github/stars/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/issues"><img src="https://img.shields.io/github/issues/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/contributors"><img src="https://img.shields.io/github/contributors/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=a6da95&style=for-the-badge&logo=starship"></a>
+</p>
+
 Welcome to a fun, effective, and organized way to study History and Geography terminology using the **spaced repetition** method!
 
 This project is perfect for Algerian third-year secondary students looking to **boost their memory** and **study smarter, not harder**.
