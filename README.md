@@ -7,8 +7,6 @@
  <a href="https://conventionalcommits.org"><img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white&style=for-the-badge"></a>
 </p>
 
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
-
 Welcome to a fun, effective, and organized way to study History and Geography terminology using the **spaced repetition** method!
 
 This project is perfect for Algerian third-year secondary students looking to **boost their memory** and **study smarter, not harder**.
