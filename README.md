@@ -4,8 +4,7 @@
 	<a><img src="https://img.shields.io/github/repo-size/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=f9e2af&style=for-the-badge&logo=databricks&logoColor=f9e2af"></a>
 	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/issues"><img src="https://img.shields.io/github/issues/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=cba6f7&style=for-the-badge&logo=hoppscotch&logoColor=cba6f7"></a>
 	<a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/contributors"><img src="https://img.shields.io/github/contributors/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=a6e3a1&style=for-the-badge&logo=starship&logoColor=a6e3a1"></a>
- <a href="https://conventionalcommits.org"><img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-blue?style=for-the-badge&logo=conventionalcommits&logoColor=white&labelColor=363a4f&color=f38ba8
-"></a>
+ <a href="https://conventionalcommits.org"><img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-blue?style=for-the-badge&logo=conventionalcommits&logoColor=white&labelColor=363a4f&color=f38ba8"></a>
 </p>
 
 Welcome to a fun, effective, and organized way to study History and Geography terminology using the **spaced repetition** method!
