@@ -1,7 +1,7 @@
 # History and Geography Terminology for Third-Year Secondary Students! 🇩🇿
 
 <p align="center">
-  <a href="README.ar.md"><img src="https://img.shields.io/badge/النسخة%20العربية-اضغط%20هنا-363a4f?style=for-the-badge&logo=github&logoColor=f9e2af&color=f9e2af"></a>
+  <a href="README.ar.md"><img src="https://img.shields.io/badge/النسخة%20العربية-اضغط%20هنا-363a4f?style=for-the-badge&logo=readdotcv&logoColor=74c7ec&labelColor=363a4f&color=74c7ec"></a>
 </p>
 
 
