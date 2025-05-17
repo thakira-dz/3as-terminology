@@ -1,7 +1,7 @@
 # مصطلحات التاريخ والجغرافيا لتلاميذ السنة الثالثة ثانوي! 🇩🇿
 
 <p align="center">
-    <a href="README.md"><img src="https://img.shields.io/badge/English%20Version-Click%20Here-363a4f?style=for-the-badge&logo=github&logoColor=f9e2af&color=f9e2af"></a>
+    <a href="README.md"><img src="https://img.shields.io/badge/English%20Version-Click%20Here-blue?style=for-the-badge&logo=readdotcv&logoColor=74c7ec&labelColor=363a4f&color=74c7ec"></a>
 </p>
 
 <p align="center">
