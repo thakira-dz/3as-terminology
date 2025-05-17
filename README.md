@@ -1,6 +1,11 @@
 # History and Geography Terminology for Third-Year Secondary Students! 🇩🇿
 
 <p align="center">
+  <a href="README.ar.md"><img src="https://img.shields.io/badge/النسخة%20العربية-اضغط%20هنا-363a4f?style=for-the-badge&logo=github&logoColor=f9e2af&color=f9e2af"></a>
+</p>
+
+
+<p align="center">
     <a><img src="https://img.shields.io/github/repo-size/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=f9e2af&style=for-the-badge&logo=databricks&logoColor=f9e2af"></a>
     <a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/issues"><img src="https://img.shields.io/github/issues/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=cba6f7&style=for-the-badge&logo=hoppscotch&logoColor=cba6f7"></a>
     <a href="https://github.com/Mouadhbendjedidi/Hisgeo-terminology/contributors"><img src="https://img.shields.io/github/contributors/Mouadhbendjedidi/Hisgeo-terminology?colorA=363a4f&colorB=a6e3a1&style=for-the-badge&logo=starship&logoColor=a6e3a1"></a>
