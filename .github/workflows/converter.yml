@@ -1,0 +1,47 @@
+name: Convert Markdown and Upload to Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'unit-*/*.md'
+  release:
+    types: [published]
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🧰 Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive texlive-xetex
+
+      - name: 🛠 Convert .md files to PDF, DOCX, EPUB
+        run: |
+          mkdir -p output
+          for mdfile in $(find . -type f -path "./unit-*" -name "*.md"); do
+            base=$(basename "$mdfile" .md)
+            dir=$(dirname "$mdfile" | sed 's|./||;s|/|_|g')
+            name="${dir}_${base}"
+
+            pandoc "$mdfile" -o "output/${name}.pdf"
+            pandoc "$mdfile" -o "output/${name}.docx"
+            pandoc "$mdfile" -o "output/${name}.epub"
+          done
+
+      - name: 📦 Zip All Outputs
+        run: |
+          cd output
+          zip ../converted-files.zip *
+
+      - name: 🚀 Upload to GitHub Release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: converted-files.zip
