@@ -18,10 +18,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Pandoc and LaTeX
+      - name: Set up Pandoc, LaTeX, and LibreOffice
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex fonts-freefont-ttf
+          sudo apt-get install -y pandoc libreoffice fonts-freefont-ttf
 
       - name: Convert Markdown files
         run: |
@@ -32,9 +32,11 @@ jobs:
               base=$(basename "$mdfile" .md)
               dir=$(dirname "$mdfile" | sed 's|/|_|g')
               out="converted/${dir}_${base}"
-              pandoc "$mdfile" -o "${out}.pdf" --pdf-engine=xelatex || echo "PDF failed for $mdfile"
+              # Convert to DOCX and EPUB
               pandoc "$mdfile" -o "${out}.docx" || echo "DOCX failed for $mdfile"
               pandoc "$mdfile" -o "${out}.epub" || echo "EPUB failed for $mdfile"
+              # Convert DOCX to PDF using LibreOffice
+              libreoffice --headless --convert-to pdf --outdir converted "${out}.docx" || echo "PDF failed for $mdfile"
             done
           done
 
