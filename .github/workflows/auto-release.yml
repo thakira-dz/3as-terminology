@@ -47,7 +47,7 @@ jobs:
         with:
           tag_name: ${{ steps.bump_tag.outputs.new_tag }}
           name: Release ${{ steps.bump_tag.outputs.new_tag }}
-          body: Auto release with converted files.
+          body: Here is a diffrent versions of these terminologies, I Hope you find Your way!
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
