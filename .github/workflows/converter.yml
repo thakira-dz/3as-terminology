@@ -45,8 +45,8 @@ jobs:
         with:
           commit-message: "Add converted files"
           branch: converted-files
-          title: "Add converted files"
-          body: "This PR adds PDF, DOCX, and EPUB conversions for the latest Markdown changes."
+          title: "update(Terms exports)!: A New Release!"
+          body: "I have Created a Release *beep boop* 🤖 \n Make Sure To review changes before merge Have a great Day!! 😄"
           add-paths: converted/
 
   release:
