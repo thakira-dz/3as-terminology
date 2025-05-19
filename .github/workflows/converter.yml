@@ -1,158 +1,68 @@
-name: Convert Documents and Create Release
+name: Convert and Release
 
 on:
   push:
-    branches:
-      - main
     paths:
-      - 'unit-*/*.md'
+      - 'unit-1/**/*.md'
+      - 'unit-2/**/*.md'
+      - 'unit-3/**/*.md'
 
 jobs:
-  convert-and-release:
+  convert:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
 
     steps:
-      - name: 📥 Checkout repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          token: ${{ secrets.WORKFLOW_TOKEN }}
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: 🔨 Create new branch
-        run: |
-          branch_name="docs/update-$(date +%Y%m%d-%H%M%S)"
-          git checkout -b $branch_name
-          echo "BRANCH_NAME=$branch_name" >> $GITHUB_ENV
-
-      - name: 🧰 Install Pandoc, LaTeX, and Fonts
+      - name: Set up Pandoc and LaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive texlive-xetex texlive-fonts-recommended
-          sudo apt-get install -y fonts-arabeyes fonts-kacst
+          sudo apt-get install -y pandoc texlive-xetex fonts-freefont-ttf
 
-      - name: 📝 Create Arabic Template
-        run: |
-          cat > arabic-template.docx << EOL
-          <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-          <w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
-            <w:body>
-              <w:p>
-                <w:pPr>
-                  <w:bidi/>
-                  <w:rPr>
-                    <w:rtl/>
-                    <w:rFonts w:ascii="Traditional Arabic" w:hAnsi="Traditional Arabic"/>
-                  </w:rPr>
-                </w:pPr>
-              </w:p>
-            </w:body>
-          </w:document>
-          EOL
-
-      - name: 🛠 Convert Markdown to PDF, DOCX, EPUB
+      - name: Convert Markdown files
         run: |
           mkdir -p converted
-          for mdfile in $(find . -type f -path "./unit-*" -name "*.md"); do
-            base=$(basename "$mdfile" .md)
-            dir=$(dirname "$mdfile" | sed 's|./||;s|/|_|g')
-            name="${dir}_${base}"
-
-            echo "Converting $mdfile..."
-            pandoc "$mdfile" -o "converted/${name}.pdf" --pdf-engine=xelatex \
-              -V mainfont="Traditional Arabic" \
-              -V documentclass=article || echo "PDF failed for $mdfile"
-
-            pandoc "$mdfile" -o "converted/${name}.docx" \
-              --reference-doc=arabic-template.docx || echo "DOCX failed for $mdfile"
-
-            pandoc "$mdfile" -o "converted/${name}.epub" \
-              --direction=rtl || echo "EPUB failed for $mdfile"
+          for folder in unit-1 unit-2 unit-3; do
+            [ -d "$folder" ] || continue
+            find "$folder" -name '*.md' | while read mdfile; do
+              base=$(basename "$mdfile" .md)
+              dir=$(dirname "$mdfile" | sed 's|/|_|g')
+              out="converted/${dir}_${base}"
+              pandoc "$mdfile" -o "${out}.pdf" --pdf-engine=xelatex || echo "PDF failed for $mdfile"
+              pandoc "$mdfile" -o "${out}.docx" || echo "DOCX failed for $mdfile"
+              pandoc "$mdfile" -o "${out}.epub" || echo "EPUB failed for $mdfile"
+            done
           done
 
-      - name: 📦 Zip Converted Files
-        run: |
-          cd converted
-          zip -r ../converted-files.zip *
-          cd ..
-
-      - name: 📝 Commit converted files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add converted/ converted-files.zip
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "📚 convert files into pdf, docx, epub"
-          fi
-
-      - name: 🔄 Push branch
-        run: |
-          git push origin ${{ env.BRANCH_NAME }}
-
-      - name: 🔍 Create Pull Request
-        id: create-pr
-        uses: peter-evans/create-pull-request@v5
+      - name: Create Pull Request with converted files
+        uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.WORKFLOW_TOKEN }}
-          title: "📚 تحديث المستندات المحولة"
-          body: |
-            # 🌟 تحديث جديد للمستندات
-            
-            السلام عليكم ورحمة الله وبركاته،
-            
-            تم إنشاء هذا الطلب تلقائياً لتحديث المستندات المحولة:
+          commit-message: "Add converted files"
+          branch: converted-files
+          title: "Add converted files"
+          body: "This PR adds PDF, DOCX, and EPUB conversions for the latest Markdown changes."
+          add-paths: converted/
 
-            ## 📋 التغييرات
-            - ✨ تحويل جميع ملفات Markdown إلى PDF
-            - 📘 تحويل المستندات إلى صيغة DOCX
-            - 📱 إنشاء نسخ EPUB للقراءة على الأجهزة المحمولة
+  release:
+    needs: convert
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
-            ## ✅ قائمة المراجعة
-            - [ ] مراجعة الملفات المحولة
-            - [ ] التأكد من سلامة النصوص العربية
-            - [ ] التحقق من تنسيق الصفحات
-
-            ## 📌 ملاحظات
-            - تم استخدام خط Traditional Arabic للمستندات
-            - تم ضبط اتجاه الكتابة من اليمين إلى اليسار
-            - الملفات مضغوطة في ملف ZIP للتحميل السهل
-          branch: ${{ env.BRANCH_NAME }}
-          base: main
-          delete-branch: false
-
-      - name: ✅ Auto-Approve Pull Request
-        if: steps.create-pr.outputs.pull-request-number
-        uses: hmarr/auto-approve-action@v3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
-          pull-request-number: ${{ steps.create-pr.outputs.pull-request-number }}
-          github-token: ${{ secrets.WORKFLOW_TOKEN }}
+          ref: ${{ github.ref }}
 
-      - name: 🧰 Set up GitHub CLI
-        uses: cli/cli-action@v2
-
-      - name: 🔄 Merge Pull Request
-        if: steps.create-pr.outputs.pull-request-number
-        run: |
-          gh pr merge ${{ steps.create-pr.outputs.pull-request-number }} --merge --delete-branch
+      - name: Upload converted files as release assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: converted/*
         env:
-          GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
-
-      - name: 🚀 Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: converted-files.zip
-          tag_name: v${{ github.run_number }}
-          name: "الإصدار ${{ github.run_number }}"
-          body: |
-            # 📚 إصدار جديد للمستندات المحولة
-            
-            يحتوي هذا الإصدار على:
-            - 📄 نسخ PDF للمستندات
-            - 📘 نسخ DOCX للتحرير
-            - 📱 نسخ EPUB للقراءة على الأجهزة المحمولة
-        env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
