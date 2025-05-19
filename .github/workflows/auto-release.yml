@@ -23,14 +23,16 @@ jobs:
         id: get_latest_tag
         run: |
           TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "Latest tag: $TAG"
           echo "tag=$TAG" >> $GITHUB_OUTPUT
 
       - name: Bump tag
         id: bump_tag
         run: |
-          VERSION=${{ steps.get_latest_tag.outputs.tag#v }}
+          VERSION=$(echo "${{ steps.get_latest_tag.outputs.tag }}" | sed 's/^v//')
           IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION"
           NEW_TAG="v$MAJOR.$MINOR.$((PATCH + 1))"
+          echo "New tag: $NEW_TAG"
           echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
 
       - name: Create new tag
