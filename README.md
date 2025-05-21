@@ -12,21 +12,9 @@
  <a href="https://conventionalcommits.org"><img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-blue?style=for-the-badge&logo=conventionalcommits&logoColor=white&labelColor=363a4f&color=f38ba8"></a>
 </p>
 
-Welcome to a fun, effective, and organized way to study History and Geography terminology using the **spaced repetition** method!
+Welcome to a fun, effective, and organized way to study History and Geography terminology!
 
 This project is perfect for Algerian third-year secondary students looking to **boost their memory** and **study smarter, not harder**.
-
----
-
-## ✨ Why This Exists
-
-The idea came to me during my final year of high school. I discovered [Anki](https://apps.ankiweb.net/), an awesome flashcard app based on **spaced repetition**, and thought:  
-**Why not apply this to our History and Geo terminology?**
-
-After successfully using it myself, I decided to make the list available in digital format for everyone.
-
-> Found a mistake or want to contribute? Feel free to [open a Pull Request](https://github.com/Mouadhbendjedidi/hisgeo-Terminology/pulls).  
-> We count on you, programmers! 😆
 
 ---
 
@@ -44,15 +32,6 @@ All terminology files are available in Markdown format and organized by unit and
 
 Found a typo, want to add more terms, or improve definitions?  
 Feel free to open a Pull Request or an Issue—your help is welcome!
-
----
-
-## Future Plans
-
-- [ ] Export terms to Anki decks
-- [ ] Create an org to make it easier for people to access these terminologies
-- [ ] Discord Server
-- [ ] Build a website for this project
 
 ---
 
