@@ -20,7 +20,7 @@ This project is perfect for Algerian third-year secondary students looking to **
 
 ## 📂 How to Use This Repository
 
-All terminology files are available in (PDF-EPUB-DOCX) format and organized by unit and subject.
+All terminology files are available in (PDF-EPUB-DOCX) format and organized by unit.
 
 - Download the latest release from the [Releases section](https://github.com/Mouadhbendjedidi/Hisgeo-terminology/releases)
 - Extract the files you need
