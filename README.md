@@ -24,14 +24,14 @@ All terminology files are available in Markdown format and organized by unit and
 
 - Download the latest release from the [Releases section](https://github.com/Mouadhbendjedidi/Hisgeo-terminology/releases)
 - Extract the files you need
-- Use them as a reference, for revision, or to import into your favorite flashcard or note-taking app
+- Use them as a reference, for revision.
 
 ---
 
 ## ✏️ Contributing
 
 Found a typo, want to add more terms, or improve definitions?  
-Feel free to open a Pull Request or an Issue—your help is welcome!
+Feel free to open a [Pull Request](https://github.com/thakira-dz/3as-terminology/pulls) or an [Issue](https://github.com/thakira-dz/3as-terminology/issues)—your help is welcome!
 
 ---
 
