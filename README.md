@@ -12,9 +12,9 @@
  <a href="https://conventionalcommits.org"><img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-blue?style=for-the-badge&logo=conventionalcommits&logoColor=white&labelColor=363a4f&color=f38ba8"></a>
 </p>
 
-Welcome to a fun, effective, and organized way to study History and Geography terminology!
+🎯 Welcome to a fun, effective, and organized way to study History and Geography terminology!
 
-This project is perfect for Algerian third-year secondary students looking to **boost their memory** and **study smarter, not harder**.
+This project is perfect for Algerian third-year secondary students looking to **boost their memory** with an easy and fun way that lets you get an A mark in the terminology section, which is 10 points🔥!
 
 ---
 
