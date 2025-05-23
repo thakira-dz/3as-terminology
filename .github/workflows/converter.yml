@@ -48,23 +48,3 @@ jobs:
           title: "update(Terms exports)!: A New Release!"
           body: "I have Created a Release *beep boop* 🤖 \n Make Sure To review changes before merge Have a great Day!! 😄"
           add-paths: converted/
-
-  release:
-    needs: convert
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }}
-
-      - name: Upload converted files as release assets
-        uses: softprops/action-gh-release@v2
-        with:
-          files: converted/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
