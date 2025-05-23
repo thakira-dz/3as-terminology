@@ -33,7 +33,7 @@ jobs:
               dir=$(dirname "$mdfile" | sed 's|/|_|g')
               out="converted/${dir}_${base}"
               # Convert to DOCX and EPUB
-              pandoc "$mdfile" -o "${out}.docx" || echo "DOCX failed for $mdfile"
+              pandoc "$mdfile" -o "${out}.docx" --refrence-doc=.pandoc/template.docx || echo "DOCX failed for $mdfile"
               pandoc "$mdfile" -o "${out}.epub" || echo "EPUB failed for $mdfile"
               # Convert DOCX to PDF using LibreOffice
               libreoffice --headless --convert-to pdf --outdir converted "${out}.docx" || echo "PDF failed for $mdfile"
