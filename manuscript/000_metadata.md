@@ -13,9 +13,7 @@ keywords: "history, geography, terms, memorization, Algeria, secondary education
 # thanks: "So Long, and Thanks for All the Fish"
 publisher: My Publisher
 rights: © 2025 Mouadh Bendjedidi, Thakira-DZ
-identifier:
-- scheme: ISBN-10
-  text: 1234567890
+
 
 # Formatting
 toc-title: "Table of Contents"
