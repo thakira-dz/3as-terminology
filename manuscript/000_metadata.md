@@ -1,6 +1,7 @@
 ---
 # METADATA
 lang: ar-SA # like en, en-UK, en-US, fr, it, it-IT, ...
+dir: rtl # right-to-left, like Arabic, Hebrew, Persian, Urdu
 title: "مصطلحات التاريخ والجغرافيا سنة 3 ثانوي"
 subtitle: "طريقة بسيطة لحفظ مصطلحات"
 subject: "مع فريق ذاكرة الجزائر"
