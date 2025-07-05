@@ -16,7 +16,7 @@ rights: © 2025 Mouadh Bendjedidi, Thakira-DZ
 
 
 # Formatting
-toc-title: "Table of Contents"
+toc-title: "الفهرس"
 toc: true
 toc_depth: 2
 lof: false # List of figures
