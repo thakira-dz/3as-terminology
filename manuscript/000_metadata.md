@@ -8,7 +8,7 @@ author: "Mouadh Bendjedidi"
 creator:
 - role: co-author
   text: Dearest Collaborator
-date: 05-07-2026
+date: 05-07-2025
 keywords: "history, geography, terms, memorization, Algeria, secondary education"
 # thanks: "So Long, and Thanks for All the Fish"
 publisher: My Publisher
