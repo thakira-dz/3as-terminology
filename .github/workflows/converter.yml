@@ -24,9 +24,9 @@ jobs:
       - name: Convert Markdown files
         run: |
           mkdir -p converted
-          pandoc -d config_pdf.yaml manuscript/*.md -o converted/manuscript.pdf
-          pandoc -d config_docx.yaml manuscript/*.md -o converted/manuscript.docx
-          pandoc -d config_epub.yaml manuscript/*.md -o converted/manuscript.epub
+          pandoc -d .pandoc/config_pdf.yaml manuscript/*.md -o converted/manuscript.pdf
+          pandoc -d .pandoc/config_docx.yaml manuscript/*.md -o converted/manuscript.docx
+          pandoc -d .pandoc/config_epub.yaml manuscript/*.md -o converted/manuscript.epub
 
       - name: Create Pull Request with converted files
         uses: peter-evans/create-pull-request@v6
