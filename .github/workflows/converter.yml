@@ -3,9 +3,7 @@ name: Convert
 on:
   push:
     paths:
-      - 'unit-1/**/*.md'
-      - 'unit-2/**/*.md'
-      - 'unit-3/**/*.md'
+      - 'manuscript/*.md'
 
 jobs:
   convert:
@@ -18,27 +16,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Pandoc, LaTeX, and LibreOffice
+      - name: Set up Pandoc
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc libreoffice fonts-freefont-ttf
+          sudo apt-get install -y pandoc
 
       - name: Convert Markdown files
         run: |
           mkdir -p converted
-          for folder in unit-1 unit-2 unit-3; do
-            [ -d "$folder" ] || continue
-            find "$folder" -name '*.md' | while read mdfile; do
-              base=$(basename "$mdfile" .md)
-              dir=$(dirname "$mdfile" | sed 's|/|_|g')
-              out="converted/${dir}_${base}"
-              # Convert to DOCX and EPUB
-              pandoc "$mdfile" -o "${out}.docx" --refrence-doc=.pandoc/template.docx || echo "DOCX failed for $mdfile"
-              pandoc "$mdfile" -o "${out}.epub" || echo "EPUB failed for $mdfile"
-              # Convert DOCX to PDF using LibreOffice
-              libreoffice --headless --convert-to pdf --outdir converted "${out}.docx" || echo "PDF failed for $mdfile"
-            done
-          done
+          pandoc -d config_pdf.yaml manuscript/*.md -o converted/manuscript.pdf
+          pandoc -d config_docx.yaml manuscript/*.md -o converted/manuscript.docx
+          pandoc -d config_epub.yaml manuscript/*.md -o converted/manuscript.epub
 
       - name: Create Pull Request with converted files
         uses: peter-evans/create-pull-request@v6
