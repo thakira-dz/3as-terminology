@@ -3,16 +3,16 @@
 lang: ar-SA # like en, en-UK, en-US, fr, it, it-IT, ...
 title: "مصطلحات التاريخ والجغرافيا سنة 3 ثانوي"
 subtitle: "طريقة بسيطة لحفظ مصطلحات"
-subject: ""
+subject: "مع فريق ذاكرة الجزائر"
 author: "Mouadh Bendjedidi"
 creator:
 - role: co-author
   text: Dearest Collaborator
-date: 21-11-2020
-keywords: "Technology, Philosophy, OpenSource"
+date: 05-07-2025
+keywords: "history, geography, terms, memorization, Algeria, secondary education"
 # thanks: "So Long, and Thanks for All the Fish"
 publisher: My Publisher
-rights: © 2020 Stefano Cecere, CC BY-NC
+rights: © 2025 Mouadh Bendjedidi, Thakira-DZ
 identifier:
 - scheme: ISBN-10
   text: 1234567890
