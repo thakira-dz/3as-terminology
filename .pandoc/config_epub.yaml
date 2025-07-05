@@ -14,7 +14,7 @@ highlight-style: pygments
 #epub-fonts:
 #- foobar.otf
 epub-chapter-level: 1
-epub-cover-image: "manuscript/img/cover.jpg"
+#epub-cover-image: "manuscript/img/cover.jpg"
 css: ["assets/styles/epub_style.css"]
 
 # log 
